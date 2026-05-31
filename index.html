@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milkibee — Rasa Alam dalam Setiap Tegukan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-bee">🐝</span>
+        <span>Milkibee</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#flavors">Varian Rasa</a></li>
+        <li><a href="#benefits">Manfaat</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <a href="#flavors" class="nav-cta">Pesan Sekarang</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#hero" onclick="closeMenu()">Beranda</a></li>
+      <li><a href="#about" onclick="closeMenu()">Tentang</a></li>
+      <li><a href="#flavors" onclick="closeMenu()">Varian Rasa</a></li>
+      <li><a href="#benefits" onclick="closeMenu()">Manfaat</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Kontak</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="honey-blob blob-1"></div>
+      <div class="honey-blob blob-2"></div>
+      <div class="honey-blob blob-3"></div>
+      <div class="hex-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="bee-icon">🐝</span> 100% Natural · No Preservatives
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Susu Segar</span>
+        <span class="title-line italic">Sentuhan Madu</span>
+        <span class="title-line">Alam</span>
+      </h1>
+      <p class="hero-subtitle">
+        Milkibee hadir dengan perpaduan sempurna antara susu segar pilihan dan madu murni alami. Tersedia dalam 4 varian rasa yang memanjakan lidah Anda.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#flavors" class="btn-primary">
+          Jelajahi Varian Rasa
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#about" class="btn-outline">Kenali Kami</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Varian Rasa</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Alami</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Pengawet</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="bottle-showcase">
+        <div class="bottle-card active" data-flavor="honey">
+          <div class="bottle-glow glow-honey"></div>
+          <div class="bottle-img">
+            <div class="bottle-shape honey-bottle">
+              <div class="bottle-liquid"></div>
+              <div class="bottle-label">
+                <div class="label-brand">Milkibee</div>
+                <div class="label-flavor">Original Honey</div>
+                <div class="label-bee">🍯</div>
+              </div>
+            </div>
+          </div>
+          <div class="bottle-tag">Original Honey</div>
+        </div>
+      </div>
+      <div class="floating-ingredients">
+        <div class="ingredient i1">🍯</div>
+        <div class="ingredient i2">🥛</div>
+        <div class="ingredient i3">🌸</div>
+        <div class="ingredient i4">⭐</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-visual">
+        <div class="about-card-main">
+          <div class="honeycomb-pattern"></div>
+          <div class="about-icon-big">🐝</div>
+          <p class="about-card-quote">"Dari sarang lebah ke tangan Anda"</p>
+        </div>
+        <div class="about-card-float">
+          <span class="float-emoji">🌿</span>
+          <p>Bahan Alami Terpilih</p>
+        </div>
+        <div class="about-card-float float-2">
+          <span class="float-emoji">🏆</span>
+          <p>Kualitas Premium</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Tentang Milkibee</div>
+        <h2 class="section-title">Cinta di Setiap <em>Tegukan</em></h2>
+        <p>
+          Milkibee lahir dari semangat untuk menghadirkan minuman susu berkualitas tinggi yang memadukan manisnya madu alami dengan kelezatan susu segar. Kami percaya bahwa minuman yang baik berasal dari bahan-bahan terbaik alam.
+        </p>
+        <p>
+          Dengan teknologi pengolahan modern namun tetap mempertahankan keaslian cita rasa, setiap botol Milkibee membawa kesegaran dan kebaikan nutrisi yang lengkap untuk keluarga Anda.
+        </p>
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">🌾</div>
+            <div>
+              <strong>Susu Segar Pilihan</strong>
+              <p>Dari peternakan terpercaya dengan standar higienitas tinggi</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🐝</div>
+            <div>
+              <strong>Madu Murni Asli</strong>
+              <p>Langsung dari sarang lebah tanpa campuran bahan kimia</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🧪</div>
+            <div>
+              <strong>Tanpa Pengawet</strong>
+              <p>100% alami, aman untuk seluruh anggota keluarga</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAVORS -->
+  <section class="flavors" id="flavors">
+    <div class="flavors-bg">
+      <div class="flavor-blob fb-1"></div>
+      <div class="flavor-blob fb-2"></div>
+    </div>
+    <div class="flavors-container">
+      <div class="section-header">
+        <div class="section-label light">Varian Rasa</div>
+        <h2 class="section-title light">Pilih Favoritmu</h2>
+        <p class="section-desc">Empat varian rasa unik yang memadukan kebaikan susu dan kekayaan alam</p>
+      </div>
+
+      <div class="flavor-tabs">
+        <button class="flavor-tab active" data-tab="honey">🍯 Original Honey</button>
+        <button class="flavor-tab" data-tab="chocolate">🍫 Chocolate Honey</button>
+        <button class="flavor-tab" data-tab="mint">🌿 Mint Honey</button>
+        <button class="flavor-tab" data-tab="vanilla">🌼 Vanilla Honey</button>
+      </div>
+
+      <div class="flavor-panels">
+
+        <!-- Honey -->
+        <div class="flavor-panel active" id="panel-honey">
+          <div class="panel-visual">
+            <div class="panel-bottle honey-theme">
+              <div class="pb-cap cap-gold"></div>
+              <div class="pb-body">
+                <div class="pb-liquid liquid-honey"></div>
+                <div class="pb-label">
+                  <span class="pb-brand">Milkibee</span>
+                  <span class="pb-name">Original Honey</span>
+                  <span class="pb-emoji">🍯</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-deco">
+              <div class="deco-circle dc-1"></div>
+              <div class="deco-circle dc-2"></div>
+              <div class="hex hex-1">⬡</div>
+              <div class="hex hex-2">⬡</div>
+            </div>
+          </div>
+          <div class="panel-info">
+            <div class="pi-badge" style="background:#FFF3CD;color:#9A6C00;">🍯 Original</div>
+            <h3>Original Honey Milk</h3>
+            <p class="pi-tagline">Klasik yang Tak Lekang Waktu</p>
+            <p class="pi-desc">Perpaduan sempurna antara susu segar pilihan dan madu hutan asli. Rasa manis alami yang lembut dengan tekstur creamy yang memanjakan tenggorokan. Cocok untuk sarapan atau minuman sore hari.</p>
+            <div class="pi-tags">
+              <span>Susu Segar</span>
+              <span>Madu Hutan</span>
+              <span>Propolis</span>
+              <span>Vitamin B12</span>
+            </div>
+            <div class="pi-nutrition">
+              <div class="nutri-item"><span class="nutri-val">120</span><span class="nutri-label">Kalori</span></div>
+              <div class="nutri-item"><span class="nutri-val">8g</span><span class="nutri-label">Protein</span></div>
+              <div class="nutri-item"><span class="nutri-val">12g</span><span class="nutri-label">Karbohidrat</span></div>
+              <div class="nutri-item"><span class="nutri-val">3g</span><span class="nutri-label">Lemak</span></div>
+            </div>
+            <a href="#contact" class="btn-flavor" style="background: linear-gradient(135deg, #F4A623, #E8840A);">Pesan Original Honey →</a>
+          </div>
+        </div>
+
+        <!-- Chocolate -->
+        <div class="flavor-panel" id="panel-chocolate">
+          <div class="panel-visual">
+            <div class="panel-bottle choc-theme">
+              <div class="pb-cap cap-brown"></div>
+              <div class="pb-body">
+                <div class="pb-liquid liquid-choc"></div>
+                <div class="pb-label">
+                  <span class="pb-brand">Milkibee</span>
+                  <span class="pb-name">Chocolate Honey</span>
+                  <span class="pb-emoji">🍫</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-deco">
+              <div class="deco-circle dc-1" style="background:rgba(101,67,33,0.1)"></div>
+              <div class="deco-circle dc-2" style="background:rgba(101,67,33,0.05)"></div>
+              <div class="hex hex-1" style="color:rgba(101,67,33,0.15)">⬡</div>
+              <div class="hex hex-2" style="color:rgba(101,67,33,0.1)">⬡</div>
+            </div>
+          </div>
+          <div class="panel-info">
+            <div class="pi-badge" style="background:#F3E5D0;color:#5C3317;">🍫 Chocolate</div>
+            <h3>Chocolate Honey Milk</h3>
+            <p class="pi-tagline">Perpaduan Coklat & Madu yang Sempurna</p>
+            <p class="pi-desc">Kelezatan coklat premium berpadu harmonis dengan manisnya madu asli. Menggunakan biji kakao pilihan Nusantara yang menghasilkan rasa coklat kaya dan lembut tanpa rasa pahit berlebih.</p>
+            <div class="pi-tags">
+              <span>Coklat Premium</span>
+              <span>Madu Asli</span>
+              <span>Susu Segar</span>
+              <span>Kakao Nusantara</span>
+            </div>
+            <div class="pi-nutrition">
+              <div class="nutri-item"><span class="nutri-val">145</span><span class="nutri-label">Kalori</span></div>
+              <div class="nutri-item"><span class="nutri-val">9g</span><span class="nutri-label">Protein</span></div>
+              <div class="nutri-item"><span class="nutri-val">18g</span><span class="nutri-label">Karbohidrat</span></div>
+              <div class="nutri-item"><span class="nutri-val">4g</span><span class="nutri-label">Lemak</span></div>
+            </div>
+            <a href="#contact" class="btn-flavor" style="background: linear-gradient(135deg, #8B4513, #5C3317);">Pesan Chocolate Honey →</a>
+          </div>
+        </div>
+
+        <!-- Mint -->
+        <div class="flavor-panel" id="panel-mint">
+          <div class="panel-visual">
+            <div class="panel-bottle mint-theme">
+              <div class="pb-cap cap-green"></div>
+              <div class="pb-body">
+                <div class="pb-liquid liquid-mint"></div>
+                <div class="pb-label">
+                  <span class="pb-brand">Milkibee</span>
+                  <span class="pb-name">Mint Honey</span>
+                  <span class="pb-emoji">🌿</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-deco">
+              <div class="deco-circle dc-1" style="background:rgba(45,155,90,0.1)"></div>
+              <div class="deco-circle dc-2" style="background:rgba(45,155,90,0.05)"></div>
+              <div class="hex hex-1" style="color:rgba(45,155,90,0.15)">⬡</div>
+              <div class="hex hex-2" style="color:rgba(45,155,90,0.1)">⬡</div>
+            </div>
+          </div>
+          <div class="panel-info">
+            <div class="pi-badge" style="background:#D4EDDA;color:#155724;">🌿 Fresh Mint</div>
+            <h3>Mint Honey Milk</h3>
+            <p class="pi-tagline">Segar, Cool & Menyegarkan Jiwa</p>
+            <p class="pi-desc">Kesegaran daun mint alami yang berpadu dengan susu lembut dan madu, menciptakan sensasi dingin menyegarkan di setiap tegukan. Sempurna untuk menemani hari-hari aktif Anda di cuaca tropis.</p>
+            <div class="pi-tags">
+              <span>Daun Mint Segar</span>
+              <span>Madu Asli</span>
+              <span>Susu Segar</span>
+              <span>Eucalyptus</span>
+            </div>
+            <div class="pi-nutrition">
+              <div class="nutri-item"><span class="nutri-val">110</span><span class="nutri-label">Kalori</span></div>
+              <div class="nutri-item"><span class="nutri-val">7g</span><span class="nutri-label">Protein</span></div>
+              <div class="nutri-item"><span class="nutri-val">14g</span><span class="nutri-label">Karbohidrat</span></div>
+              <div class="nutri-item"><span class="nutri-val">2g</span><span class="nutri-label">Lemak</span></div>
+            </div>
+            <a href="#contact" class="btn-flavor" style="background: linear-gradient(135deg, #2D9B5A, #1A6B3C);">Pesan Mint Honey →</a>
+          </div>
+        </div>
+
+        <!-- Vanilla -->
+        <div class="flavor-panel" id="panel-vanilla">
+          <div class="panel-visual">
+            <div class="panel-bottle vanilla-theme">
+              <div class="pb-cap cap-cream"></div>
+              <div class="pb-body">
+                <div class="pb-liquid liquid-vanilla"></div>
+                <div class="pb-label">
+                  <span class="pb-brand">Milkibee</span>
+                  <span class="pb-name">Vanilla Honey</span>
+                  <span class="pb-emoji">🌼</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-deco">
+              <div class="deco-circle dc-1" style="background:rgba(244,196,48,0.1)"></div>
+              <div class="deco-circle dc-2" style="background:rgba(244,196,48,0.05)"></div>
+              <div class="hex hex-1" style="color:rgba(244,196,48,0.2)">⬡</div>
+              <div class="hex hex-2" style="color:rgba(244,196,48,0.15)">⬡</div>
+            </div>
+          </div>
+          <div class="panel-info">
+            <div class="pi-badge" style="background:#FFF8E1;color:#7D5A00;">🌼 Vanilla</div>
+            <h3>Vanilla Honey Milk</h3>
+            <p class="pi-tagline">Kelembutan Vanilla Berpadu Madu</p>
+            <p class="pi-desc">Aroma vanilla Madagascar yang hangat dan lembut berpadu dengan manisnya madu pilihan. Rasa creamy yang kaya dengan aftertaste manis lembut yang membuat Anda ketagihan. Pilihan favorit keluarga.</p>
+            <div class="pi-tags">
+              <span>Vanilla Madagascar</span>
+              <span>Madu Multiflora</span>
+              <span>Susu Full Cream</span>
+              <span>Kalsium Tinggi</span>
+            </div>
+            <div class="pi-nutrition">
+              <div class="nutri-item"><span class="nutri-val">135</span><span class="nutri-label">Kalori</span></div>
+              <div class="nutri-item"><span class="nutri-val">8g</span><span class="nutri-label">Protein</span></div>
+              <div class="nutri-item"><span class="nutri-val">16g</span><span class="nutri-label">Karbohidrat</span></div>
+              <div class="nutri-item"><span class="nutri-val">4g</span><span class="nutri-label">Lemak</span></div>
+            </div>
+            <a href="#contact" class="btn-flavor" style="background: linear-gradient(135deg, #D4A017, #A37300);">Pesan Vanilla Honey →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits" id="benefits">
+    <div class="benefits-container">
+      <div class="section-header">
+        <div class="section-label">Manfaat Milkibee</div>
+        <h2 class="section-title">Kebaikan dalam <em>Setiap Tegukan</em></h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card bc-1">
+          <div class="bc-icon">💪</div>
+          <h4>Tingkatkan Imunitas</h4>
+          <p>Kombinasi madu asli dan susu segar memperkuat sistem kekebalan tubuh secara alami.</p>
+        </div>
+        <div class="benefit-card bc-2">
+          <div class="bc-icon">🦴</div>
+          <h4>Kuat Tulang & Gigi</h4>
+          <p>Kandungan kalsium dan fosfor tinggi mendukung pertumbuhan tulang yang sehat.</p>
+        </div>
+        <div class="benefit-card bc-3">
+          <div class="bc-icon">⚡</div>
+          <h4>Energi Sepanjang Hari</h4>
+          <p>Gula alami dari madu memberikan energi cepat tanpa lonjakan gula darah berlebih.</p>
+        </div>
+        <div class="benefit-card bc-4">
+          <div class="bc-icon">🧠</div>
+          <h4>Dukung Kecerdasan</h4>
+          <p>Protein susu berkualitas tinggi mendukung perkembangan otak dan konsentrasi.</p>
+        </div>
+        <div class="benefit-card bc-5">
+          <div class="bc-icon">🌙</div>
+          <h4>Tidur Lebih Nyenyak</h4>
+          <p>Tryptophan dalam susu membantu tubuh rileks dan meningkatkan kualitas tidur.</p>
+        </div>
+        <div class="benefit-card bc-6">
+          <div class="bc-icon">✨</div>
+          <h4>Kulit Bercahaya</h4>
+          <p>Antioksidan alami dari madu membantu melindungi kulit dan menjaga kecantikan alami.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testi-container">
+      <div class="section-header">
+        <div class="section-label">Pelanggan Kami</div>
+        <h2 class="section-title">Mereka Sudah <em>Merasakannya</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Milkibee Original Honey jadi minuman wajib pagi hari di keluarga kami! Rasanya enak banget dan anak-anak suka. Yang paling penting, tidak ada bahan pengawet jadi aman untuk si kecil."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div>
+              <strong>Anita Rahayu</strong>
+              <span>Ibu Rumah Tangga, Surabaya</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card testi-featured">
+          <div class="testi-badge">⭐ Most Loved</div>
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Chocolate Honey-nya luar biasa! Rasa coklatnya kaya banget tapi tidak bikin enek. Saya suka banget dicampur dengan es batu, jadi minuman sore yang mewah. Highly recommended!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: linear-gradient(135deg, #8B4513, #5C3317);">B</div>
+            <div>
+              <strong>Budi Santoso</strong>
+              <span>Mahasiswa, Malang</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Mint Honey-nya bikin nagih! Cocok banget diminum setelah olahraga, segar dan menyegarkan. Satu botol habis sebelum sampai rumah haha. Langsung beli 1 lusin!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: linear-gradient(135deg, #2D9B5A, #1A6B3C);">C</div>
+            <div>
+              <strong>Citra Dewi</strong>
+              <span>Atlet Lari, Malang</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / ORDER -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="section-label">Hubungi Kami</div>
+        <h2 class="section-title">Pesan <em>Sekarang!</em></h2>
+        <p>Dapatkan Milkibee langsung ke tangan Anda. Tersedia dalam berbagai pilihan kemasan dan harga yang terjangkau.</p>
+        <div class="contact-channels">
+          <a href="https://wa.me/6281234567890" class="contact-channel" target="_blank">
+            <div class="cc-icon" style="background:#25D366">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </div>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>+62 812-3456-7890</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/milkibee" class="contact-channel" target="_blank">
+            <div class="cc-icon" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div>
+              <strong>Instagram</strong>
+              <span>@milkibee.official</span>
+            </div>
+          </a>
+          <a href="mailto:hello@milkibee.id" class="contact-channel">
+            <div class="cc-icon" style="background: linear-gradient(135deg, #F4A623, #E8840A)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>hello@milkibee.id</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <div class="contact-form">
+          <h3>Kirim Pesan</h3>
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama Anda">
+          </div>
+          <div class="form-group">
+            <label>Nomor HP / WhatsApp</label>
+            <input type="tel" placeholder="+62 xxx xxxx xxxx">
+          </div>
+          <div class="form-group">
+            <label>Varian yang Diminati</label>
+            <select>
+              <option value="">-- Pilih Varian --</option>
+              <option>Original Honey</option>
+              <option>Chocolate Honey</option>
+              <option>Mint Honey</option>
+              <option>Vanilla Honey</option>
+              <option>Mix (Semua Varian)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Pesan / Pertanyaan</label>
+            <textarea placeholder="Tulis pesan atau pertanyaan Anda di sini..."></textarea>
+          </div>
+          <button class="btn-submit" onclick="handleSubmit(event)">
+            Kirim Pesan 🐝
+          </button>
+          <div class="form-success" id="form-success">
+            ✅ Terima kasih! Kami akan segera menghubungi Anda.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-bee">🐝</span> Milkibee
+        </div>
+        <p>Susu segar berpadu madu alami untuk kesehatan dan kebahagiaan keluarga Indonesia.</p>
+        <div class="footer-socials">
+          <a href="#">📘</a>
+          <a href="#">📸</a>
+          <a href="#">🐦</a>
+          <a href="#">▶️</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Produk</h5>
+        <ul>
+          <li><a href="#flavors">Original Honey</a></li>
+          <li><a href="#flavors">Chocolate Honey</a></li>
+          <li><a href="#flavors">Mint Honey</a></li>
+          <li><a href="#flavors">Vanilla Honey</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Perusahaan</h5>
+        <ul>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#benefits">Manfaat</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li><a href="#">Distributor</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Info</h5>
+        <ul>
+          <li><a href="#">Cara Pemesanan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Milkibee. All rights reserved. Made with 🍯 in Indonesia.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
